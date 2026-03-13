@@ -5,12 +5,6 @@ location: "Nashville, Tennessee, USA"
 date: "June 2026"
 
 navbar:
-  - label: Home
-    path: "#home"
-  - label: "Track 1: Shelf"
-    path: "#track1"
-  - label: "Track 2: Cart→Shelf"
-    path: "#track2"
   - label: Evaluation
     path: "#evaluation"
   - label: Leaderboard
