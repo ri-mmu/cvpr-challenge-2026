@@ -1,0 +1,13 @@
+title: "CVPR 2026 Challenge"
+description: "CVPR 2026 Challenge"
+
+url: "https://ri-mmu.github.io"
+baseurl: "/cvpr-challenge-2026"
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - LICENSE

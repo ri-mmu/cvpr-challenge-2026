@@ -1,0 +1,36 @@
+full_title: "CVPR 2026 Challenge"
+short_title: "CVPR 2026 Challenge"
+description: "CVPR 2026 Challenge"
+location: "Nashville, Tennessee, USA"
+date: "June 2026"
+
+navbar:
+  - label: Home
+    path: "#home"
+  - label: Track 1
+    path: "#track1"
+  - label: Track 2
+    path: "#track2"
+  - label: Evaluation
+    path: "#evaluation"
+  - label: Leaderboard
+    path: "#leaderboard"
+  - label: Important Dates
+    path: "#dates"
+  - label: Organizers
+    path: "#organizers"
+
+deadlines:
+  - date: TBD
+    text: Challenge Open
+  - date: TBD
+    text: Submission Deadline
+  - date: TBD
+    text: Winner Announcement
+  - date: June 2026
+    text: Workshop at CVPR 2026
+
+organizers:
+  - name: TBD
+    org: TBD
+    homepage: "#"

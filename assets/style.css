@@ -1,0 +1,230 @@
+/* ===== Base ===== */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  overflow-y: scroll;
+}
+
+a {
+  color: #2563eb;
+}
+a:hover {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* ===== Hero Banner ===== */
+.hero-banner {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #3b82f6 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.hero-workshop {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+/* ===== Navbar ===== */
+#main-nav {
+  background: #1e293b;
+  padding: 0;
+  z-index: 1000;
+}
+
+#main-nav .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 14px 16px;
+  transition: color 0.2s, background 0.2s;
+}
+
+#main-nav .navbar-nav .nav-link:hover,
+#main-nav .navbar-nav .nav-link.active {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+/* ===== Challenge Cards ===== */
+.challenge-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s;
+}
+
+.challenge-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.challenge-card .card-body {
+  padding: 24px;
+}
+
+.challenge-card .card-title {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===== Placeholder Image ===== */
+.placeholder-img {
+  background: #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===== Leaderboard Table ===== */
+.leaderboard-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.leaderboard-table thead {
+  background: #1e293b;
+  color: #fff;
+}
+
+.leaderboard-table thead th {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 16px;
+  border: none;
+}
+
+.leaderboard-table tbody td {
+  padding: 12px 16px;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* ===== Dates Table ===== */
+.dates-table td {
+  padding: 12px 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.date-label {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.date-value {
+  text-align: right;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* ===== Organizers ===== */
+.organizer-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #94a3b8;
+}
+
+.organizer h6 {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.organizer p {
+  font-size: 0.75rem;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 12px 32px;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #1e293b;
+  color: rgba(255,255,255,0.6);
+  padding: 24px 0;
+  margin-top: 0;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  .placeholder-img {
+    height: 180px;
+  }
+}

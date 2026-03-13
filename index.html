@@ -1,0 +1,235 @@
+---
+layout: default
+---
+
+<!-- Overview -->
+<section class="section" id="overview">
+  <div class="container">
+    <h2 class="section-title">Overview</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card challenge-card">
+          <div class="card-body">
+            <p class="text-muted">
+              Challenge overview will be described here. This section introduces the motivation,
+              goals, and scope of the challenge.
+            </p>
+            <div class="text-center my-4">
+              <div class="placeholder-img">
+                <span>Challenge Overview Figure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Track 1 -->
+<section class="section section-alt" id="track1">
+  <div class="container">
+    <h2 class="section-title">Track 1: [TBD]</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="text-muted">
+              Detailed description of Track 1 will be provided here, including task definition,
+              dataset information, and expected submissions.
+            </p>
+            <ul class="text-muted">
+              <li>Task definition: TBD</li>
+              <li>Dataset: TBD</li>
+              <li>Metrics: TBD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card challenge-card h-100">
+          <div class="card-body text-center d-flex align-items-center justify-content-center">
+            <div class="placeholder-img">
+              <span>Track 1 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Track 2 -->
+<section class="section" id="track2">
+  <div class="container">
+    <h2 class="section-title">Track 2: [TBD]</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card challenge-card h-100">
+          <div class="card-body text-center d-flex align-items-center justify-content-center">
+            <div class="placeholder-img">
+              <span>Track 2 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="text-muted">
+              Detailed description of Track 2 will be provided here, including task definition,
+              dataset information, and expected submissions.
+            </p>
+            <ul class="text-muted">
+              <li>Task definition: TBD</li>
+              <li>Dataset: TBD</li>
+              <li>Metrics: TBD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Evaluation -->
+<section class="section section-alt" id="evaluation">
+  <div class="container">
+    <h2 class="section-title">Evaluation</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card challenge-card">
+          <div class="card-body">
+            <h5 class="card-title">Evaluation Protocol</h5>
+            <p class="text-muted">
+              Evaluation details will be described here, including metrics, submission format,
+              and evaluation server information.
+            </p>
+
+            <h6 class="mt-4">Submission Guidelines</h6>
+            <ul class="text-muted">
+              <li>Submission format: TBD</li>
+              <li>Number of submissions allowed: TBD</li>
+              <li>Evaluation server: TBD</li>
+            </ul>
+
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-primary btn-lg disabled">Submission Portal (Coming Soon)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leaderboard -->
+<section class="section" id="leaderboard">
+  <div class="container">
+    <h2 class="section-title">Leaderboard</h2>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <!-- Track 1 Leaderboard -->
+        <h5 class="mb-3">Track 1 Leaderboard</h5>
+        <div class="table-responsive mb-5">
+          <table class="table table-hover leaderboard-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Members</th>
+                <th>Affiliation</th>
+                <th>Report</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6" class="text-center text-muted py-4">
+                  Competition has not started yet. Results will appear here.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Track 2 Leaderboard -->
+        <h5 class="mb-3">Track 2 Leaderboard</h5>
+        <div class="table-responsive">
+          <table class="table table-hover leaderboard-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Members</th>
+                <th>Affiliation</th>
+                <th>Report</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6" class="text-center text-muted py-4">
+                  Competition has not started yet. Results will appear here.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Important Dates -->
+<section class="section section-alt" id="dates">
+  <div class="container">
+    <h2 class="section-title">Important Dates</h2>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="card challenge-card">
+          <div class="card-body">
+            <table class="table dates-table mb-0">
+              <tbody>
+                {% for deadline in site.data.conference.deadlines %}
+                <tr>
+                  <td class="date-label">{{ deadline.text }}</td>
+                  <td class="date-value">{{ deadline.date }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Organizers -->
+<section class="section" id="organizers">
+  <div class="container">
+    <h2 class="section-title">Organizers</h2>
+    <div class="row justify-content-center">
+      {% for person in site.data.conference.organizers %}
+      <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+        <div class="organizer">
+          <div class="organizer-photo">
+            <i class="fas fa-user"></i>
+          </div>
+          <h6 class="mt-2">
+            {% if person.homepage and person.homepage != "#" %}
+            <a href="{{ person.homepage }}" target="_blank">{{ person.name }}</a>
+            {% else %}
+            {{ person.name }}
+            {% endif %}
+          </h6>
+          <p class="text-muted small">{{ person.org }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

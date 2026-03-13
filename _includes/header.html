@@ -1,0 +1,30 @@
+<header>
+  <!-- Hero Banner -->
+  <div class="hero-banner" id="home">
+    <div class="hero-overlay">
+      <h1>{{ site.data.conference.full_title }}</h1>
+      <p class="hero-subtitle">{{ site.data.conference.location }} &middot; {{ site.data.conference.date }}</p>
+      <p class="hero-workshop">Workshop at CVPR 2026</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="#home">{{ site.data.conference.short_title }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+              aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navContent">
+        <ul class="navbar-nav">
+          {% for nav in site.data.conference.navbar %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ nav.path }}">{{ nav.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
