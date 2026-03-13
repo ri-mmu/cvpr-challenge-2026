@@ -1,8 +1,9 @@
 full_title: "H-PRISM: Humanoid Precise Relational Interactions on Shelves and Manipulation"
 short_title: "H-PRISM"
 description: "H-PRISM Challenge at CVPR 2026"
-location: "Nashville, Tennessee, USA"
-date: "June 3-7, 2026"
+location: "Colorado Convention Center, Denver, CO"
+date: "Wed June 3 - Sun June 7, 2026"
+cvpr_link: "https://cvpr.thecvf.com/Conferences/2026"
 
 navbar:
   - label: Evaluation
