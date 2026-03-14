@@ -149,6 +149,25 @@ a:hover {
   border-radius: 8px;
 }
 
+/* ===== Task Arrow ===== */
+.task-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #94a3b8;
+  padding: 0 8px;
+}
+
+.task-arrow-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #94a3b8;
+  padding: 8px 0;
+}
+
 /* ===== Leaderboard Card ===== */
 .leaderboard-card {
   border: none;
