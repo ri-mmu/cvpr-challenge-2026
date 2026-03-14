@@ -26,9 +26,8 @@ layout: default
     <h2 class="section-title">Challenge</h2>
 
     <div class="row">
-      <div class="col-lg-10 mx-auto">
-
-        <div class="card challenge-card mb-4">
+      <div class="col-lg-6 mb-4">
+        <div class="card challenge-card h-100">
           <div class="card-body">
             <h5 class="card-title">Task 1. Object Uprighting</h5>
             <p class="text-muted">Restores stability by uprighting displaced items on the shelf.</p>
@@ -37,8 +36,9 @@ layout: default
             </div>
           </div>
         </div>
-
-        <div class="card challenge-card mb-4">
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card challenge-card h-100">
           <div class="card-body">
             <h5 class="card-title">Task 2. In-Shelf Alignment</h5>
             <p class="text-muted">Organizes shelf items into precise rows and columns for consistency.</p>
@@ -47,18 +47,20 @@ layout: default
             </div>
           </div>
         </div>
-
-        <div class="card challenge-card mb-4">
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card challenge-card h-100">
           <div class="card-body">
-            <h5 class="card-title">Task 3. Cart-to-Shelf Pick & Place</h5>
+            <h5 class="card-title">Task 3. Cart-to-Shelf Pick &amp; Place</h5>
             <p class="text-muted">Picks items from the supply cart and transports them to the shelf.</p>
             <div class="placeholder-img wide mt-3">
               <span>Task 3 Figure</span>
             </div>
           </div>
         </div>
-
-        <div class="card challenge-card mb-4">
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card challenge-card h-100">
           <div class="card-body">
             <h5 class="card-title">Task 4. Pattern-based Replenishment</h5>
             <p class="text-muted">Analyzes existing arrangement patterns and replenishes items strategically to maintain order.</p>
@@ -67,7 +69,6 @@ layout: default
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -141,7 +142,7 @@ layout: default
             {% endif %}
           </div>
           <h6 class="mt-2">{{ person.name }}</h6>
-          <p class="text-muted small">{{ person.degree }}<br>{{ person.school }}</p>
+          <p class="text-muted small">{{ person.school }}</p>
         </div>
       </div>
       {% endfor %}
