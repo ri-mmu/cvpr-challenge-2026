@@ -120,61 +120,40 @@ layout: default
   <div class="container">
     <h2 class="section-title">Leaderboard</h2>
     <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <!-- Track 1 Leaderboard -->
-        <h5 class="mb-3">Track 1: Shelf Manipulation Leaderboard</h5>
-        <div class="table-responsive mb-5">
-          <table class="table table-hover leaderboard-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Team</th>
-                <th>Members</th>
-                <th>Affiliation</th>
-                <th>Report</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="6" class="text-center text-muted py-4">
-                  Competition has not started yet. Results will appear here.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Track 2 Leaderboard -->
-        <h5 class="mb-3">Track 2: Cart-to-Shelf Transfer Leaderboard</h5>
-        <div class="table-responsive">
-          <table class="table table-hover leaderboard-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Team</th>
-                <th>Members</th>
-                <th>Affiliation</th>
-                <th>Report</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="6" class="text-center text-muted py-4">
-                  Competition has not started yet. Results will appear here.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="text-muted mb-4">The leaderboard is hosted on CodaLab. Click below to view rankings and submit your results.</p>
+        <a href="#" class="btn btn-primary btn-lg disabled">CodaLab Leaderboard (Coming Soon)</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Organizers -->
+<section class="section section-alt" id="organizers">
+  <div class="container">
+    <h2 class="section-title">Organizers</h2>
+    <div class="row justify-content-center">
+      {% for person in site.data.conference.organizers %}
+      <div class="col-6 col-md text-center mb-4">
+        <div class="organizer">
+          <div class="organizer-photo">
+            {% if person.photo and person.photo != "" %}
+            <img src="{{ person.photo }}" alt="{{ person.name }}">
+            {% else %}
+            <i class="fas fa-user"></i>
+            {% endif %}
+          </div>
+          <h6 class="mt-2">{{ person.name }}</h6>
+          <p class="text-muted small">{{ person.degree }}<br>{{ person.school }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- Important Dates -->
-<section class="section section-alt" id="dates">
+<section class="section" id="dates">
   <div class="container">
     <h2 class="section-title">Important Dates</h2>
     <div class="row">
@@ -194,30 +173,6 @@ layout: default
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Organizers -->
-<section class="section" id="organizers">
-  <div class="container">
-    <h2 class="section-title">Organizers</h2>
-    <div class="row justify-content-center">
-      {% for person in site.data.conference.organizers %}
-      <div class="col-6 col-md text-center mb-4">
-        <div class="organizer">
-          <div class="organizer-photo">
-            {% if person.photo and person.photo != "" %}
-            <img src="{{ person.photo }}" alt="{{ person.name }}">
-            {% else %}
-            <i class="fas fa-user"></i>
-            {% endif %}
-          </div>
-          <h6 class="mt-2">{{ person.name }}</h6>
-          <p class="text-muted small">{{ person.degree }}<br>{{ person.school }}</p>
-        </div>
-      </div>
-      {% endfor %}
     </div>
   </div>
 </section>
