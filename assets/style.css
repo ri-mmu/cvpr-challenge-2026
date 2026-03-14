@@ -154,12 +154,12 @@ a:hover {
   border: none;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  background: linear-gradient(135deg, #fefce8, #fff7ed);
+  background: #fff;
 }
 
 .leaderboard-icon {
   font-size: 4rem;
-  color: #f59e0b;
+  color: #f59e0b !important;
 }
 
 /* ===== Leaderboard Table ===== */
