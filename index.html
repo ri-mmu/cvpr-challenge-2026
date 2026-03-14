@@ -7,7 +7,7 @@ layout: default
   <div class="container">
     <h2 class="section-title">Overview</h2>
     <div class="row">
-      <div class="col-lg-12 mx-auto">
+      <div class="col-lg-10 mx-auto">
         <div class="card challenge-card">
           <div class="card-body">
             <p class="text-muted">
@@ -25,9 +25,59 @@ layout: default
   <div class="container">
     <h2 class="section-title">Challenge</h2>
 
-    <p class="text-muted mb-4">[챌린지 설명을 여기에 작성하세요.]</p>
-    <div class="placeholder-img wide mt-3">
-      <img src="assets/sample_task.png" alt="Challenge Task">
+    <div class="row align-items-stretch">
+      <div class="col-lg mb-4">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Task 1. Object Uprighting</h5>
+            <p class="text-muted">Restores stability by uprighting displaced items on the shelf.</p>
+            <div class="placeholder-img wide mt-3">
+              <span>Task 1 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="task-arrow d-none d-lg-flex mb-4">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Task 2. In-Shelf Alignment</h5>
+            <p class="text-muted">Organizes shelf items into precise rows and columns for consistency.</p>
+            <div class="placeholder-img wide mt-3">
+              <span>Task 2 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-stretch">
+      <div class="col-lg mb-4">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Task 3. Cart-to-Shelf Pick &amp; Place</h5>
+            <p class="text-muted">Picks items from the supply cart and transports them to the shelf.</p>
+            <div class="placeholder-img wide mt-3">
+              <span>Task 3 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="task-arrow d-none d-lg-flex mb-4">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card challenge-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Task 4. Pattern-based Replenishment</h5>
+            <p class="text-muted">Analyzes existing arrangement patterns and replenishes items strategically to maintain order.</p>
+            <div class="placeholder-img wide mt-3">
+              <span>Task 4 Figure</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -46,7 +96,7 @@ layout: default
               and evaluation server information.
             </p>
 
-            <h6 class="mt-4">Submission Guidelines</h6>
+            <h5 class="mt-4">Submission Guidelines</h5>
             <ul class="text-muted">
               <li>Submission format: TBD</li>
               <li>Number of submissions allowed: TBD</li>
@@ -66,17 +116,40 @@ layout: default
 <!-- Leaderboard -->
 <section class="section" id="leaderboard">
   <div class="container">
-    <h2 class="section-title">Leaderboard</h2>
+    <h2 class="section-title"><i class="fas fa-trophy leaderboard-icon mr-2"></i>Leaderboard</h2>
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div class="card leaderboard-card text-center">
           <div class="card-body py-4">
-            <i class="fas fa-trophy leaderboard-icon"></i>
-            <h4 class="mt-3 mb-2">Rankings</h4>
             <p class="text-muted mb-4">The leaderboard will be available once the challenge opens.</p>
             <a href="#" class="btn btn-primary btn-lg disabled">
               <i class="fas fa-external-link-alt mr-2"></i>View Leaderboard (Coming Soon)
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Important Dates -->
+<section class="section" id="dates">
+  <div class="container">
+    <h2 class="section-title">Important Dates</h2>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="card challenge-card">
+          <div class="card-body">
+            <table class="table dates-table mb-0">
+              <tbody>
+                {% for deadline in site.data.conference.deadlines %}
+                <tr>
+                  <td class="date-label">{{ deadline.text }}</td>
+                  <td class="date-value">{{ deadline.date }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -100,35 +173,9 @@ layout: default
             {% endif %}
           </div>
           <h6 class="mt-2">{{ person.name }}</h6>
-          <p class="text-muted small">{{ person.degree }}<br>{{ person.school }}</p>
         </div>
       </div>
       {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- Important Dates -->
-<section class="section" id="dates">
-  <div class="container">
-    <h2 class="section-title">Important Dates</h2>
-    <div class="row">
-      <div class="col-lg-4 mx-auto">
-        <div class="card challenge-card">
-          <div class="card-body">
-            <table class="table dates-table mb-0">
-              <tbody>
-                {% for deadline in site.data.conference.deadlines %}
-                <tr>
-                  <td class="date-label">{{ deadline.text }}</td>
-                  <td class="date-value">{{ deadline.date }}</td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
