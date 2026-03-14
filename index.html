@@ -132,31 +132,8 @@ layout: default
   </div>
 </section>
 
-<!-- Organizers -->
-<section class="section section-alt" id="organizers">
-  <div class="container">
-    <h2 class="section-title">Organizers</h2>
-    <div class="row justify-content-center">
-      {% for person in site.data.conference.organizers %}
-      <div class="col-6 col-md text-center mb-4">
-        <div class="organizer">
-          <div class="organizer-photo">
-            {% if person.photo and person.photo != "" %}
-            <img src="{{ person.photo }}" alt="{{ person.name }}">
-            {% else %}
-            <i class="fas fa-user"></i>
-            {% endif %}
-          </div>
-          <h6 class="mt-2">{{ person.name }}</h6>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <!-- Important Dates -->
-<section class="section" id="dates">
+<section class="section section-alt" id="dates">
   <div class="container">
     <h2 class="section-title">Important Dates</h2>
     <div class="row">
@@ -176,6 +153,29 @@ layout: default
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Organizers -->
+<section class="section" id="organizers">
+  <div class="container">
+    <h2 class="section-title">Organizers</h2>
+    <div class="row justify-content-center">
+      {% for person in site.data.conference.organizers %}
+      <div class="col-6 col-md text-center mb-4">
+        <div class="organizer">
+          <div class="organizer-photo">
+            {% if person.photo and person.photo != "" %}
+            <img src="{{ person.photo }}" alt="{{ person.name }}">
+            {% else %}
+            <i class="fas fa-user"></i>
+            {% endif %}
+          </div>
+          <h6 class="mt-2">{{ person.name }}</h6>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
