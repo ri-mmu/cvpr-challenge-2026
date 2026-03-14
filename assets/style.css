@@ -184,25 +184,25 @@ a:hover {
 
 /* ===== Organizers ===== */
 .organizer-photo {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: #e2e8f0;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #94a3b8;
 }
 
 .organizer h6 {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .organizer p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 /* ===== Buttons ===== */
