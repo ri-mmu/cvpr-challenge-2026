@@ -149,6 +149,19 @@ a:hover {
   border-radius: 8px;
 }
 
+/* ===== Leaderboard Card ===== */
+.leaderboard-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  background: linear-gradient(135deg, #fefce8, #fff7ed);
+}
+
+.leaderboard-icon {
+  font-size: 4rem;
+  color: #f59e0b;
+}
+
 /* ===== Leaderboard Table ===== */
 .leaderboard-table {
   border-radius: 8px;
@@ -197,8 +210,8 @@ a:hover {
 
 /* ===== Organizers ===== */
 .organizer-photo {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 24px;
   background: #e2e8f0;
   margin: 0 auto;
