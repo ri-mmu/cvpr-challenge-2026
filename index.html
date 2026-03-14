@@ -207,16 +207,14 @@ layout: default
       <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
         <div class="organizer">
           <div class="organizer-photo">
-            <i class="fas fa-user"></i>
-          </div>
-          <h6 class="mt-2">
-            {% if person.homepage and person.homepage != "#" %}
-            <a href="{{ person.homepage }}" target="_blank">{{ person.name }}</a>
+            {% if person.photo and person.photo != "" %}
+            <img src="{{ person.photo }}" alt="{{ person.name }}">
             {% else %}
-            {{ person.name }}
+            <i class="fas fa-user"></i>
             {% endif %}
-          </h6>
-          <p class="text-muted small">{{ person.org }}</p>
+          </div>
+          <h6 class="mt-2">{{ person.name }}</h6>
+          <p class="text-muted small">{{ person.degree }}<br>{{ person.school }}</p>
         </div>
       </div>
       {% endfor %}

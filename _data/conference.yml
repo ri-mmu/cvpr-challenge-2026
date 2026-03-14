@@ -26,6 +26,23 @@ deadlines:
     text: Workshop at CVPR 2026
 
 organizers:
-  - name: TBD
-    org: TBD
-    homepage: "#"
+  - name: Hojae Jung
+    photo: ""
+    degree: M.S. Student
+    school: Soongsil University
+  - name: Juhyung Lee
+    photo: ""
+    degree: M.S. Student
+    school: Soongsil University
+  - name: Eunwoo Song
+    photo: ""
+    degree: Undergraduate Researcher
+    school: Soongsil University
+  - name: Jaerim Kim
+    photo: ""
+    degree: Undergraduate Researcher
+    school: Soongsil University
+  - name: Heewon Kim
+    photo: ""
+    degree: Professor
+    school: Soongsil University
