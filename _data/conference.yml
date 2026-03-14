@@ -7,6 +7,8 @@ date: "Wed June 3 - Sun June 7, 2026"
 cvpr_link: "https://cvpr.thecvf.com/Conferences/2026"
 
 navbar:
+  - label: Challenge
+    path: "#challenge"
   - label: Evaluation
     path: "#evaluation"
   - label: Leaderboard
