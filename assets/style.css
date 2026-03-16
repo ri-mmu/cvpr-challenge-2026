@@ -149,30 +149,37 @@ a:hover {
   border-radius: 8px;
 }
 
-/* ===== Task Group Label ===== */
-.task-group-label {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #475569;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px 16px;
-  border-left: 4px solid #2563eb;
-  background: #f1f5f9;
-  border-radius: 0 8px 8px 0;
+/* ===== Task Group ===== */
+.task-group {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.task-group-label i {
+.task-group-shelf {
+  border-top: 4px solid #2563eb;
+}
+
+.task-group-cart {
+  border-top: 4px solid #10b981;
+}
+
+.task-group-header {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  padding: 16px 20px 8px;
+}
+
+.task-group-header i {
   margin-right: 8px;
 }
 
-/* ===== Task Card Accents ===== */
-.task-shelf {
-  border-top: 3px solid #2563eb;
-}
-
-.task-cart {
-  border-top: 3px solid #10b981;
+.task-group .challenge-card {
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
 }
 
 /* ===== Leaderboard Card ===== */
