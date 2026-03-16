@@ -3,7 +3,7 @@ full_title_line2: "Dddddd On Sssssss and Mmmmmm"
 short_title: "ABCDEF"
 description: "ABCDEF Challenge at CVPR 2026"
 location: "Colorado Convention Center"
-date: "June 3 – 7, 2026"
+date: "June 3–7, 2026"
 cvpr_link: "https://cvpr.thecvf.com/Conferences/2026"
 
 navbar:
@@ -30,11 +30,11 @@ deadlines:
 
 organizers:
   - name: Hojae Jeong
-    photo: ""
+    photo: "assets/ho.jpg"
   - name: Juhyoung Lee
-    photo: ""
+    photo: "assets/lee.jpg"
   - name: Eunwoo Song
-    photo: ""
+    photo: "assets/song.jpg"
   - name: Jaerim Kim
     photo: "assets/jaerim.JPG"
   - name: Heewon Kim
