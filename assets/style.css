@@ -158,12 +158,9 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.task-group-shelf {
-  border-top: 4px solid #2563eb;
-}
-
+.task-group-shelf,
 .task-group-cart {
-  border-top: 4px solid #10b981;
+  border-top: 4px solid #2563eb;
 }
 
 .task-group-header {
