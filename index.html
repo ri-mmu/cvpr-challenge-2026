@@ -37,9 +37,6 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="task-arrow d-none d-lg-flex mb-4">
-        <i class="fas fa-arrow-right"></i>
-      </div>
       <div class="col-lg mb-4">
         <div class="card challenge-card h-100">
           <div class="card-body">
@@ -63,9 +60,6 @@ layout: default
             </div>
           </div>
         </div>
-      </div>
-      <div class="task-arrow d-none d-lg-flex mb-4">
-        <i class="fas fa-arrow-right"></i>
       </div>
       <div class="col-lg mb-4">
         <div class="card challenge-card h-100">
@@ -173,6 +167,7 @@ layout: default
             {% endif %}
           </div>
           <h6 class="mt-2">{{ person.name }}</h6>
+          {% if person.org %}<p class="text-muted small">{{ person.org }}</p>{% endif %}
         </div>
       </div>
       {% endfor %}

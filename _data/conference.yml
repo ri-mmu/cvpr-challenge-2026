@@ -30,12 +30,17 @@ deadlines:
 
 organizers:
   - name: Hojae Jeong
+    org: Soongsil University
     photo: "assets/ho.jpg"
   - name: Juhyoung Lee
+    org: Soongsil University
     photo: "assets/lee.jpg"
   - name: Eunwoo Song
+    org: Soongsil University
     photo: "assets/song.jpg"
   - name: Jaerim Kim
+    org: Soongsil University
     photo: "assets/jaerim.JPG"
   - name: Heewon Kim
+    org: Soongsil University
     photo: "assets/won.jpg"
