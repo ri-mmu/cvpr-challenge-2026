@@ -149,23 +149,30 @@ a:hover {
   border-radius: 8px;
 }
 
-/* ===== Task Arrow ===== */
-.task-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: #94a3b8;
-  padding: 0 8px;
+/* ===== Task Group Label ===== */
+.task-group-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-left: 4px solid #2563eb;
+  background: #f1f5f9;
+  border-radius: 0 8px 8px 0;
 }
 
-.task-arrow-down {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: #94a3b8;
-  padding: 8px 0;
+.task-group-label i {
+  margin-right: 8px;
+}
+
+/* ===== Task Card Accents ===== */
+.task-shelf {
+  border-top: 3px solid #2563eb;
+}
+
+.task-cart {
+  border-top: 3px solid #10b981;
 }
 
 /* ===== Leaderboard Card ===== */
@@ -254,7 +261,7 @@ a:hover {
 }
 
 .organizer p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #94a3b8;
 }
 
